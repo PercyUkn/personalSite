@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style media="screen">
+    label {display:block;}
+    .radio>label {display:  inline;}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+</head>
+
+<body>
+  <form action="">
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" value="noobmaster69">
+    <label for="password">Password</label>
+    <input type="password" name="password" value="">
+    <label for="listaCNX">Tipo de conexión:</label>
+    <input type="text" name="listaCNX" id="listaCNX" list="dlCNX">
+    <label for="checkbox">Checkbox: </label>
+    <input type="checkbox" id="checkbox" name="checkbox" value="true">
+    <label for="radio">Radio:</label>
+    <div class="radio">
+    
+      <input id="The-Smiths"type="radio" name ="musicGroups" value="The Smiths">
+      <label for="The-Smiths">The Smiths</label>
+      <input type="radio" name="musicGroups" id="Joy-Division" value="Joy Division">
+      <label for="Joy-Divison">Joy Division</label>
+      <input type="radio" name="musicGroups" value="The Cure" id = "The-Cure">
+      <label for="The-Cure">The Cure</label>
+    </div>
+    <input type="submit" name="" value="Enviar">
+  </form>
+  <datalist id="dlCNX" class="">
+    <option value="SSID"></option>
+    <option value="TCP/IP"></option>
+    <option value="Otro"></option>
+  </datalist>
+
+
+</body>
+
+</html>
